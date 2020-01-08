@@ -10,9 +10,9 @@ This app is for learning purposes. I'll be using it for experimentation.
 
 ## TODO:
 1. play around with ViewModelScope
- - Add delays and see if jobs are canceled
+    - Add delays and see if jobs are canceled 
 2. Add network requests 
- - I want to see how difficult it is to make sequential requests. EX:   
-    1. Retrieve result from network
-    2. Retrieve result from cache
-    3. Combine the two and emit a single result to UI
+    - I want to see how difficult it is to make sequential requests. EX:   
+        1. Retrieve result from network
+        2. Retrieve result from cache
+        3. Combine the two and emit a single result to UI
