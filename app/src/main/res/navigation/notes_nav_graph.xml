@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notes_nav_graph"
+    app:startDestination="@id/noteListFragment">
+
+    <fragment
+        android:id="@+id/noteListFragment"
+        android:name="com.codingwithmitch.mvvm_koin_room.ui.NoteListFragment"
+        android:label="NoteListFragment" >
+        <action
+            android:id="@+id/action_noteListFragment_to_createNoteFragment"
+            app:destination="@id/createNoteFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+
+        <action
+            android:id="@+id/action_noteListFragment_to_detailNoteFragment"
+            app:destination="@id/detailNoteFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/createNoteFragment"
+        android:name="com.codingwithmitch.mvvm_koin_room.ui.CreateNoteFragment"
+        android:label="fragment_create_note"
+        tools:layout="@layout/fragment_create_note" />
+
+    <fragment
+        android:id="@+id/detailNoteFragment"
+        android:name="com.codingwithmitch.mvvm_koin_room.ui.DetailNoteFragment"
+        android:label="fragment_detail_note"
+        tools:layout="@layout/fragment_detail_note" />
+</navigation>

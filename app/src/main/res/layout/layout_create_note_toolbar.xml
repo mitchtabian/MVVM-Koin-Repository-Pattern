@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:weightSum="100"
+    android:gravity="center_vertical">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:visibility="visible"
+        android:id="@+id/check_container">
+
+        <ImageButton
+            android:layout_width="@dimen/toolbar_backarrow_height"
+            android:layout_height="@dimen/toolbar_backarrow_height"
+            android:src="@drawable/ic_check_black_24dp"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/create_note_toolbar_check"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="85"
+        android:id="@+id/create_note_title"
+        android:text="@string/default_note_title"
+        android:textColor="#000"
+        android:layout_marginStart="15dp"
+        android:textSize="23sp"
+        android:background="#fff"
+        android:padding="2dp"
+        android:visibility="visible"/>
+
+
+</LinearLayout>

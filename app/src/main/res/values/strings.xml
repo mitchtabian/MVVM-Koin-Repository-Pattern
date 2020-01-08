@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MVVM-Koin-Room</string>
+    <string name="default_note_title">Title</string>
+
+</resources>

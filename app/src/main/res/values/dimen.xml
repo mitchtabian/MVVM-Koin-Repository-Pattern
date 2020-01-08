@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- FAB -->
+    <dimen name="fab_margins">16dp</dimen>
+
+    <!-- Progress bar -->
+    <dimen name="progress_bar_vertical_bias">.2</dimen>
+
+    <!-- toolbar -->
+    <dimen name="toolbar_height">55dp</dimen>
+    <dimen name="toolbar_backarrow_height">40dp</dimen>
+</resources>

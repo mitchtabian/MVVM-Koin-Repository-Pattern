@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightYellow">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_note_app_bar"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/create_note_toolbar"
+            >
+
+            <include layout="@layout/layout_create_note_toolbar"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.codingwithmitch.mvp_room_koin.custom_views.LinedEditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/create_note_content"
+        android:textSize="23sp"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:gravity="top"
+        android:imeOptions="flagNoExtractUi"/>
+
+</LinearLayout>
